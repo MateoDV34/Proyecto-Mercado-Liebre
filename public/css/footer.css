@@ -1,0 +1,18 @@
+footer{
+    background-color: white;
+}
+#iconos-footer{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#articulo-footer{
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+}
+#descripcion-footer{
+    color: #666;
+    text-align: center;
+    margin-top: auto;
+}

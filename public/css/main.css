@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background: #ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+.ultimavista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 1rem;
+}
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 1rem;
+}
+main{
+background-position: right;
+text-align: center;
+font-family: 'roboto', sans-serif;
+margin-bottom: 30px;
+background-color: #ebebeb;
+padding: 10px;
+}
+#titulo1, #titulo2{
+   text-align:left;
+   padding: 8px;
+   font-size: 24px;
+   color: #666;
+   flex: 0 0 100%;
+}
+.imagenes{
+    width: 90%;
+}
+.articulo{
+   text-align: justify;
+   display: inline-block;
+   background-color: white;
+   border: #ebebeb solid 1px;
+   width: 100%;
+   margin-bottom: 10px;
+}
+#caja-articulo{
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position:relative;
+    flex-flow: row wrap;
+}
+.icono-articulo{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color:#39b54a;
+    position: absolute;
+    transition: all;
+}
+.icono-articulo:hover{
+    transform: rotateZ(-90deg);
+}
+.precios{
+    color:black;
+    font-size: 18px;
+    flex-flow: row wrap;
+    width: 30%;
+ }
+ .descuentos{
+     font-size: 1rem;
+     color: #39b54a;
+     flex-flow: row wrap;
+     width: 70%;
+ }
+ .descripcion{
+   display: none;
+ }
+ .registerhtml fieldset input{
+   display: block;
+   padding: 20px;
+   margin: auto;
+   margin-bottom: 60px;
+   width: 80%;
+   border-radius: 5px 
+}
+#nacimiento{
+    font-weight: bold;
+    color:black;
+}
+#perfil{
+    font-weight: bold;
+    color:black;
+}
+#intereses{
+    font-weight: bold;
+    color:black;
+}
+#ingresar{
+border-radius: 5px;
+transition: all;
+}
+#ingresar:hover{
+    background: #0022AA;
+}
+.loginhtml fieldset input{
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 60%;
+}
+#ingresar{
+    color:#ebebeb;
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60%;
+    background: #1259c3;
+}
+.header-bottom{
+    display: none;
+}
+@media screen and (min-width: 361px){
+ .articulo{
+     flex: 0 0 40%;
+     margin: 20px;
+     transition: all;
+ }
+ .articulo:hover .descripcion{
+    display: block;
+     font-size: 16px;
+     color:#666;
+ }
+ .articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+.encabezado{
+    justify-content: space-between;
+    align-items: baseline;
+}
+#header-top{
+    flex: 0 0 33%;
+}
+#busqueda{
+    flex: 0 0 33%;
+}
+#login{
+    flex: 0 0 33%;
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+#primera a,#segunda a{
+   padding: 5px
+}
+#burger-menu{
+    visibility: hidden;
+}
+}
+@media (min-width: 769px){
+.articulo{
+    flex: 0 0 20%;
+    transition: all;
+}
+.articulo:hover .descripcion{
+    display: block;
+    font-size: 16px;
+    color:#666;
+}
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.encabezado{
+    justify-content: space-between;
+    align-items: baseline;
+}
+#header-top{
+    flex: 0 0 33%;
+}
+#busqueda{
+    flex: 0 0 33%;
+}
+#login{
+    flex: 0 0 33%;
+}
+#primera,#segunda{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+#primera a,#segunda a{
+    padding: 15px;
+}
+#burger-menu{
+    visibility: hidden;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+}
+.footers{
+    justify-content: space-between;
+    flex: 0 0 33%;
+    padding-top: 30px;
+}
+#iconos-footer{
+    transition: all;
+}
+#iconos-footer:hover{
+color:#0022AA;
+}
+}
