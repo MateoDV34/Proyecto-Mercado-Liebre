@@ -24,15 +24,20 @@
                     <img src="/images/logo-mercado-liebre.svg">
                 </a>
             </nav>
-            <form action="/" method="get" id="busqueda">
-                <fieldset>
-                    <label for="search"></label>
-                    <input type="text" name="search" id="search" placeholder="Buscar productos, marcas">
-                    <button type="submit"><i class="fa-solid fa-search"></i></button>
-                </fieldset>
+            <form id="busqueda">
+                <input type="search" name="search" placeholder="Buscar productos, marcas">
+                <a href="/">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </a>
             </form>
             <section id="login">
-                <p><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de credito</p>
+                <a href="/register">
+                    <h3>
+                        <i class="fa-solid fa-hand-holding-dollar">
+                        </i>
+                        <b>Compra en cuotas y sin tarjeta de credito</b>
+                    </h3>
+                </a>
             </section>
         </section>
         <section class="header-bottom">
@@ -47,14 +52,11 @@
                 <a href="/login">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a>
                 <a href="/">Mis compras<i class="fa-solid fa-basket-shopping"></i></a>
             </nav>
-        </section>    
-        <nav id="burger-menu">
-            <a href="/register"><i class="fa-solid fa-bars"></i></a>
-        </nav>      
+            <nav id="burger-menu">
+                <a href="/login"><i class="fa-solid fa-bars"></i></a>
+            </nav>      
+        </section>        
     </header>
-    <figure id="banner">
-        <img src="/images/img-home-banner.jpg">
-    </figure>
 <main>
     <form class="registerhtml" action="/register" method="post">
         <fieldset>
@@ -69,8 +71,10 @@
             <label for="email"></label>
             <input type="email" id="email" placeholder="Email" required>
         </fieldset>
+        <fieldset id="fechanacimiento">
+            <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
+        </fieldset>
         <fieldset>
-            <label for="fecha-de-nacimiento" id="nacimiento">Fecha de nacimiento</label>
             <input type="date" id="fecha-de-nacimiento" required>
         </fieldset>
         <fieldset>
@@ -79,20 +83,41 @@
         </fieldset>
         <fieldset id="perfil">
             <label for="perfil-usuario">Perfil de usuario</label>
+        </fieldset>
+        <fieldset>
+            <label>Comprador</label>
             <input type="radio" name="perfil-usuario" value="comprador" placeholder="Comprador">
+        </fieldset>
+        <fieldset>
+            <label>Vendedor</label>
             <input type="radio" name="perfil-usuario" value="Vendedor" placeholder="Vendedor">
         </fieldset>
         <fieldset id="intereses">
             <label for="Intereses">Intereses</label>
-            <input type="checkbox" value="Electro" name="Intereses">
-            <input type="checkbox" value="Moda" name="Intereses">
-            <input type="checkbox" value="Hogar" name="Intereses">
-            <input type="checkbox" value="Juguetería" name="Intereses">
-            <input type="checkbox" value="Vida sana" name="Intereses">
         </fieldset>
         <fieldset>
-            <label for="imagen"></label>
-            <input type="image" id="imagen" placeholder="Foto de usuario" required>
+            <label>Electro</label>
+            <input type="checkbox" value="Electro" name="Intereses">
+        </fieldset>
+        <fieldset>
+            <label>Moda</label>
+            <input type="checkbox" value="Moda" name="Intereses">
+        </fieldset>
+        <fieldset>
+            <label>Hogar</label>
+            <input type="checkbox" value="Hogar" name="Intereses">
+        </fieldset>
+        <fieldset>
+            <label>Juguetería</label>
+            <input type="checkbox" value="Juguetería" name="Intereses">
+        </fieldset>
+        <fieldset>
+            <label>Vida sana</label>
+            <input type="checkbox" value="Vida sana" name="Intereses">
+        </fieldset>
+        <fieldset id="imagenusuario">
+            <label for="imagen"><h3>Foto de usuario</h3></label>
+            <input type="file" id="imagen" placeholder="Foto de usuario" required>
         </fieldset>
         <fieldset>
             <label for="paswword"></label>
@@ -111,25 +136,34 @@
     </form>
 </main>
 <footer>
-        <section id="iconos-footer">
-            <a href=""><i class="fa-solid fa-credit-card"></i></a>
-        </section>
-        <section id="articulo-footer">Pagá con tarjeta o en efectivo</section>
-        <p id="descripcion-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+<section>
+    <section id="footer2">
+        <article class="pagotarjeta">
+            <section id="iconos-footer">
+                <i class="fa-solid fa-credit-card"></i>
+            </section>
+            <b>Pagá con tarjeta o en efectivo</b>
+            <p id="descripcion-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
             puntos de pago. ¡Y siempre es seguro!</p>
-        <section id="iconos-footer">
-            <a href=""><i class="fa-solid fa-gift"></i></a>
-        </section>
-        <section id="articulo-footer">Envío gratis desde $ 2.500</section>
-        <p id="descripcion-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        </article>
+        <article class="enviogratis">
+            <section id="iconos-footer">
+                <i class="fa-solid fa-gift"></i>
+            </section>
+            <b>Envío gratis desde $ 2.500</b>
+            <p id="descripcion-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
             productos. Es un beneficio de Mercado Puntos.</p>
-        <section id="iconos-footer">
-            <a href=""><i class="fa-solid fa-user-shield"></i></a>
-        </section>
-        <section id="articulo-footer">Seguridad, de principio a fin</section>
-        <p id="descripcion-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+        </article>
+        <article class="protegido">
+            <section id="iconos-footer">
+                <i class="fa-solid fa-user-shield"></i>
+            </section>
+            <b>Seguridad, de principio a fin</b>
+            <p id="descripcion-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
             porque estás siempre protegid@.</p>
-        <section>Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
+        </article>
+        <p id="derechosautor">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </section>
 </footer>
 </body>
 </html>

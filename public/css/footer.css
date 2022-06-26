@@ -1,18 +1,37 @@
 footer{
     background-color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+footer .pagotarjeta{
+    margin-bottom: 10px;
+    color: #666;
+}
+footer .enviogratis{
+    margin-bottom: 10px;
+    color: #666;
+}
+footer .protegido{
+    margin-bottom: 10px;
+    color: #666;
 }
 #iconos-footer{
-    text-align: center;
+    color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
+    transition: all .3s;
 }
-#articulo-footer{
-    font-weight: bold;
-    color: #666;
-    text-align: center;
+#iconos-footer:hover{
+    color: #EAC926;
 }
 #descripcion-footer{
     color: #666;
-    text-align: center;
-    margin-top: auto;
+    margin-top: 1px;
+    font-size: 12px
+}
+#derechosautor{
+    margin-top: 50px;
 }

@@ -1,59 +1,24 @@
 header{
-    background: #EAC926;
-    font-family: 'roboto', sans-serif;
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
     padding: 5px;
     font-size: 12px;
-    max-width: 100%;
+    width: 100%;
 }
 .encabezado{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-#header-top{
-    margin: 20px 0px 20px 0px;
-    width: 50%;
-}
-#busqueda{
-text-align: center;
-padding: 5px;
-margin: 20px 0px 20px 0px;
-width: 50%;
-height: 100%;
-color: #03264c;
-}
-#busqueda input{
-    background-color: white;
-    width: 8rem;
-    height: 2rem;
-    line-height: 40px;
-    border-radius: 8px;
-}
-#busqueda button{
-    background-color: lightsteelblue;
-    border-radius: 3px;
-    padding: 3px;
-    margin-left: -2px;
-}
-#login{
-    margin-bottom: 20px;
-}
-#primera a{
-    font-size: 12px;
-}
-#segunda a{
-    font-size: 12px;
-}
-#burger-menu{
-   padding-bottom: 20px;
-   display: flex;
-   justify-content: center;
+#login a h3{
+    color: #03264C;
+    text-align: center;
 }
 #burger-menu a i{
     text-align: center;
     background-color: #1259c3;
-    font-size: 21px;
     color: white;
+    font-size: 21px;
     width: 50px;
     height: 40px;
     line-height: 40px;
